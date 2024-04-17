@@ -1,4 +1,4 @@
-header, main, img{
+header, main{
     animation: animate__zoomIn 4s;
 }
 @keyframes animate__zoomIn
@@ -13,5 +13,22 @@ header, main, img{
         }
         100% {
           transform: scale(1.0, 1.0);
+        }
+}
+#imagem1{
+    animation: animate__backInRight 4s;
+}
+@keyframes animate__backInRight
+{
+        0% {
+          transform: scale(0.0)
+          
+        }
+        50% {       
+          transform: scaleX(1.1, 1.1)
+          
+        }
+        100% {
+          transform: scaleX(1.0, 1.0)
         }
 }

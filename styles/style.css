@@ -3,17 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --hover-color: rgba(118, 171, 174, 0.5);
+}
 body{
-    background-color: rgba(0, 0, 0, 0.877);
-    color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(34, 40, 49);
+    color: rgb(255, 255, 255, 0.9);
     max-width: 100%;
 }
-.container{
-    
-    display: block;
-    max-width: 100%;
-    padding: 50px;
-}
+
 header, nav{
     margin-top: 6px;
     text-align: center;
@@ -22,11 +20,18 @@ header, nav{
     font: 600 15px/150% 'Poppins', sans-serif;
     cursor: default;
 }
+.container{
+    
+    display: block;
+    max-width: 100%;
+    padding: 100px;
+}
 #imagem1{
-    margin: 80px;
+    border-radius: 3px;
+    max-width: 80%;
     border: 1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    display: inline-block;
+    display: flex;
+    float: right;
     height: 300px;
     filter: drop-shadow(1px 0px 5px rgba(255, 255, 255, 0.562));
 }
@@ -37,21 +42,29 @@ header, nav{
     filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 0.719));
 }
 main{
+   
     display: inline-block;
-    max-width: 100%;
-    padding: 50px;
+    max-width: 80%;
+    padding: 50px 200px;
+    
 }
+
 main, h1{
     color: rgb(255, 255, 255, 0.9);
     font: 600 32px/150% 'Poppins', sans-serif;
-    text-align: center;
+    text-align: left;
 } 
+h6{
+    color: rgba(255, 255, 255, 0.7);
+    font: 500 20px/150% 'Poppins', sans-serif;
+}
 .paragrafo{
+    
     color: rgba(255, 255, 255, 0.808);
     font: 400 15px/150% 'Poppins', sans-serif;
     text-align: justify;
-    max-width: fit-content;
-    text-align: center;
+    max-width: 50%;
+    text-align: justify;
 }
 .links{
     padding: 12px 20px;
@@ -59,7 +72,7 @@ main, h1{
 }
 .links:hover{
     color: rgba(255, 255, 255, 0.9);
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--hover-color);
     font-size: 18px;
     transition: 800ms;
     cursor:pointer;
@@ -68,25 +81,26 @@ a{
     all: unset;
 }
 #redes{
-    
-    justify-content: center;
+    color: rgb(238, 238, 238);
+    justify-content: left;
+    font-size: 30px;
     max-width: 100%;
     display: flex;
-    padding: 10px 0;
+    padding: 8px 0;
     align-items: center;
     gap: 25px;
-    margin-top: 20px;
+    margin-top: 5px;
+   
 }
 #redes a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
-    border-radius: 50px;
-    
+    padding: 10px;
+    border-radius: 50px; 
 }
 #redes a:hover{
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--hover-color);
     transition: background 1.0s;
     transition: font-size 0.5s;
     font-size: 150%;
@@ -96,7 +110,8 @@ a{
 .container2{
     display: block;
     max-width: 100%;
-    padding: 50px 100px;
+    padding: 80px 50px;
+    margin-top: 100px;
 }
 .container2 h1{
     text-align: center;
@@ -170,7 +185,7 @@ li{
     cursor: pointer;
 }
 .acessos ion-icon:hover{
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--hover-color);
     border-radius: 50px;
     transition: background 1.0s;
     transition: font-size 1.0s;
@@ -197,7 +212,4 @@ li{
     max-width: 100%;
     display: block;
     font-size: 20px;
-}
-.msg{
-    max-width: 100%;
 }
