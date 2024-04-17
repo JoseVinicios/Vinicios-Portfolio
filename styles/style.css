@@ -9,9 +9,10 @@ body{
     max-width: 100%;
 }
 .container{
+    
     display: block;
     max-width: 100%;
-    padding: 150px 100px;
+    padding: 50px;
 }
 header, nav{
     margin-top: 6px;
@@ -22,33 +23,35 @@ header, nav{
     cursor: default;
 }
 #imagem1{
+    margin: 80px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
-    display: inline-flex;
-    float: right;
+    display: inline-block;
     height: 300px;
-    max-width: 50%;
+    filter: drop-shadow(1px 0px 5px rgba(255, 255, 255, 0.562));
 }
 #imagem1:hover{
-    border: 3px solid rgba(255, 255, 255, 0.9);
+    border: 3px solid rgba(255, 255, 255, 0.9 );
     transition: border 0.1s;
     cursor: pointer;
+    filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 0.719));
 }
 main{
     display: inline-block;
     max-width: 100%;
-    padding: 150px;
+    padding: 50px;
 }
 main, h1{
     color: rgb(255, 255, 255, 0.9);
     font: 600 32px/150% 'Poppins', sans-serif;
-    text-align: left;
+    text-align: center;
 } 
 .paragrafo{
-    font: 400 12px/150% 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.808);
+    font: 400 15px/150% 'Poppins', sans-serif;
     text-align: justify;
-    max-width: 50%;
-    text-align: left;
+    max-width: fit-content;
+    text-align: center;
 }
 .links{
     padding: 12px 20px;
@@ -65,8 +68,9 @@ a{
     all: unset;
 }
 #redes{
-    justify-content: left;
-    max-width: 690px;
+    
+    justify-content: center;
+    max-width: 100%;
     display: flex;
     padding: 10px 0;
     align-items: center;
@@ -84,8 +88,8 @@ a{
 #redes a:hover{
     background: rgba(255, 255, 255, 0.5);
     transition: background 1.0s;
-    transition: font-size 1.0s;
-    font-size: 120%;
+    transition: font-size 0.5s;
+    font-size: 150%;
     cursor: pointer;
 }
 /*projetos*/
