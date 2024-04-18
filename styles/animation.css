@@ -3,32 +3,35 @@ header, main{
 }
 @keyframes animate__zoomIn
 {
-        20% {
-          transform: scale(0, 0);
-          
-        }
-        50% {       
-          transform: scale(1.1, 1.1);
-          
-        }
-        100% {
-          transform: scale(1.0, 1.0);
-        }
+  0%{
+  transform: scale(0.1,0.1)
+}
+  50% {       
+  transform: scale(1.1, 1.1);
+  
+}
+  100% {
+  transform: scale(1.0, 1.0);
+}
 }
 #imagem1{
-    animation: animate__backInRight 4s;
+  animation: animate__backInRight 2s;
 }
-@keyframes animate__backInRight
-{
-        0% {
-          transform: scale(0.0)
-          
-        }
-        50% {       
-          transform: scaleX(1.1, 1.1)
-          
-        }
-        100% {
-          transform: scaleX(1.0, 1.0)
-        }
+@keyframes animate__backInRight {
+  0%{
+    position: relative;
+    display: inline-block;
+    height: 80px;
+}
+  50%{
+    max-width: 50%;
+    display: inline-block;
+    height: 250px;
+    
+}
+  100%{
+    max-width: 80%;
+    display: flex;
+    float: right;
+}
 }

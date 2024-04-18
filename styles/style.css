@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 :root{
+    --bg-color: rgb(34, 40, 49);
+    --text-color: rgb(255, 255, 255, 0.9);
     --hover-color: rgba(118, 171, 174, 0.5);
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: rgb(34, 40, 49);
-    color: rgb(255, 255, 255, 0.9);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     max-width: 100%;
 }
 
@@ -21,36 +26,34 @@ header, nav{
     cursor: default;
 }
 .container{
-    
     display: block;
     max-width: 100%;
     padding: 100px;
 }
 #imagem1{
-    border-radius: 3px;
-    max-width: 80%;
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    max-width: 100%;
+    border: 1px solid var(--hover-color);
     display: flex;
     float: right;
     height: 300px;
     filter: drop-shadow(1px 0px 5px rgba(255, 255, 255, 0.562));
 }
 #imagem1:hover{
-    border: 3px solid rgba(255, 255, 255, 0.9 );
+    border: 3px solid var(--hover-color);
     transition: border 0.1s;
     cursor: pointer;
-    filter: drop-shadow(1px 0px 8px rgba(255, 255, 255, 0.719));
+    filter: drop-shadow(1px 0px 8px var(--hover-color));
 }
 main{
-   
+    position: relative;
     display: inline-block;
-    max-width: 80%;
+    max-width: 100%;
     padding: 50px 200px;
-    
 }
 
 main, h1{
-    color: rgb(255, 255, 255, 0.9);
+    color: var(--text-color);
     font: 600 32px/150% 'Poppins', sans-serif;
     text-align: left;
 } 
@@ -196,8 +199,8 @@ li{
 ::-webkit-scrollbar-track { background: transparent; }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(220.55deg, rgba(0, 0, 0, 0.877) 0%, rgba(82, 79, 79, 0.877) 100%);
-  border-radius: 20px;
+  background: linear-gradient(220.55deg, rgb(49, 54, 63) 0%, rgb(34, 40, 49) 100%);
+  border-radius: 5px;
 }
 .contato{
     border: 1px solid red;
