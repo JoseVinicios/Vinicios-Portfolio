@@ -27,11 +27,9 @@ header, main{
     max-width: 50%;
     display: inline-block;
     height: 250px;
-    
 }
   100%{
     max-width: 80%;
     display: flex;
     float: right;
-}
 }

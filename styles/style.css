@@ -36,7 +36,7 @@ header, nav{
     border: 1px solid rgba(206, 186, 74, 0.562);
     display: flex;
     float: right;
-    height: 400px;
+    height: 350px;
     filter: drop-shadow(1px 0px 5px rgba(206, 186, 74, 0.562));
 }
 #imagem1:hover{
@@ -149,34 +149,24 @@ li{
 .projeto a:hover{
     cursor: pointer;
 }
-.tecicons{
-    font-size: 30px;
-    margin-top: 10px;
-}
+
 /*imagens projeto*/
 
-.devlinksimg{
+.projetoimg{
     max-width: 50%;
     display: block;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: transform 0.5s;
     
 }
-.devlinksimg:hover{
+.projetoimg:hover{
     transform: scale(1.1);
     cursor: pointer;
-    filter: drop-shadow(1px 0px 5px var(--hover-color));
+    filter: drop-shadow(1px 0px 1px var(--hover-color));
 }
-.nlwimg{
-    display: inline-flex;
-    margin-top: 20px;
-    max-width: 100%;
-    height: 450px;
-    border-radius: 20px;
-}
-
 /*links abaixo da imagem*/
 .acessos{
+    margin-top: 10px;
     max-width: max-content;
     display: inline-flex;
     gap: 18px;
@@ -186,29 +176,37 @@ li{
     font: 500 12px/150% 'Poppins', sans-serif;
     display: inline-flex;
     align-items: center;
-    
+}
+.tecicons{
+    max-width: max-content;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+.lhtml:hover{
+    color: rgb(228, 97, 21);
+    transform: scale(1.1);
+}
+.lcss:hover{
+    color: rgba(56, 134, 236, 0.726);
+    transform: scale(1.1);
+}
+.ljs:hover{
+    color: rgb(255, 255, 0);
+    transform: scale(1.1);
 }
 summary{
-    margin-top: 5px;
-    list-style-type: none;
-   
+    padding: 10px;
     cursor: pointer;
-    font: 600 20px/150% 'Poppins', sans-serif;
-    border-radius: 25px;
+    font: 600 15px/150% 'Poppins', sans-serif;
     max-width: max-content;
-    padding: 8px;
+    list-style: none;
 }
 summary:hover{
-    background-color: var(--hover-color);
-    border-radius: 25px;
     transition: 800ms;
-    font-size: 150%;
-}
-details h3{
-    display: inline-block;
-    color: rgb(255, 255, 255, 0.9);
-    margin-top: 50px;
-    font: 600 20px/150% 'Popins', sans-serif;
+    font-size: 100%;
 }
 .acessos ion-icon{
     font-size: 25px;
@@ -232,14 +230,59 @@ details h3{
   border-radius: 5px;
 }
 .contato{
-    max-width: 100%;
-    padding: 100px 100px;
-}
-.contato h1{
-    margin-top: 20px;
-}
-.contato input{
+    padding: 100px
     max-width: 100%;
     display: block;
-    font-size: 20px;
+    border: 1px solid red;
+}
+.contato h1{
+    margin-top: 100px;
+    max-width: 100%;
+    padding: 100px 100px 0;
+}
+fieldset{
+    border: none;
+}
+form{
+    text-align: center;
+}
+input{
+    all: unset;
+}
+.inputs{
+    padding: 20px;
+    align-items: justify;
+    float: left;
+    
+}
+
+input{
+    font: 500 28px/50% 'Poppins', sans-serif;
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    border-radius: 25px;
+    gap: 25px;
+    padding: 10px;
+}
+
+button{
+    all: unset;
+}
+button{
+    font: 600 25px/150% 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    float: right;
+    padding: 10px;
+    margin-left: 200px;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 25px;
+}
+button:hover{
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 800ms;
 }
